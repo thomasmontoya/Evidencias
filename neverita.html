@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nerevra</title>
+	<style>
+		.cuerpo{
+			position: absolute;
+			top: 130px;
+			left: 450px;
+			height: 0px;
+			width: 750px;
+			background: url(papa1.png);
+				
+			transition: 2s;
+		}
+		.man{
+			position: absolute;
+			left: 350px;
+			top: 580px;
+			height: 0px;
+			width: 80px;
+			background: red;
+			background: url("miaz2.png");
+			transition: 4s;
+		}
+		.man2{
+			position: absolute;
+			left: 490px;
+			top: 580px;
+			height: 0px;
+			width: 80px;
+			background: red;
+			background: url("zipote.png");
+			transition: 4s;
+		}
+		.man3{
+			position: absolute;
+			left: 650px;
+			top: 580px;
+			height: 0px;
+			width: 80px;
+			background: red;
+			background: url("yuca.png");
+			transition: 4s;
+		}
+		.man4{
+			position: absolute;
+			left: 350px;
+			top: 485px;
+			height: 0px;
+			width: 80px;
+			background: red;
+			background: url("hiervabuena.png");
+			transition: 4s;
+		}
+		.man5{
+			position: absolute;
+			left: 490px;
+			top: 485px;
+			height: 0px;
+			width: 80px;
+			background: red;
+			background: url("pilla.png");
+			transition: 4s;
+		}
+		.man6{
+			position: absolute;
+			left: 650px;
+			top: 485px;
+			height: 0px;
+			width: 80px;
+			background: red;
+			background: url("malva.png");
+			transition: 4s;
+		}
+		.man7{
+			position: absolute;
+			left: 630px;
+			top: 350px;
+			height: 0px;
+			width: 80px;
+			background: red;
+			background: url("benas.png");
+			transition: 4s;
+		}
+		.man8{
+			position: absolute;
+			left: 490px;
+			top: 360px;
+			height: 0px;
+			width: 80px;
+			background: red;
+			background: url("dinero.png");
+			transition: 4s;
+		}
+		.man9{
+			position: absolute;
+			left: 330px;
+			top: 360px;
+			height: 0px;
+			width: 80px;
+			background: red;
+			background: url("arbo.png");
+			transition: 4s;
+		}
+		.man10{
+			position: absolute;
+			left: 330px;
+			top: 240px;
+			height: 0px;
+			width: 80px;
+			background: red;
+			background: url("mai.png");
+			transition: 4s;
+		}
+		.man11{
+			position: absolute;
+			left: 1130px;
+			top: 470px;
+			height: 0px;
+			width: 80px;
+			background: red;
+			background: url("gua.png");
+			transition: 4s;
+		}
+		.man12{
+			position: absolute;
+			left: 975px;
+			top: 470px;
+			height: 0px;
+			width: 80px;
+			background: red;
+			background: url("alga.png");
+			transition: 4s;
+		}
+		.man13{
+			position: absolute;
+			left: 840px;
+			top: 460px;
+			height: 0px;
+			width: 80px;
+			background: red;
+			background: url("uva.png");
+			transition: 4s;
+		}
+		.man14{
+			position: absolute;
+			left: 845px;
+			top: 355px;
+			height: 0px;
+			width: 80px;
+			background: red;
+			background: url("papa.png");
+			transition: 4s;
+		}
+		.man15{
+			position: absolute;
+			left: 1110px;
+			top: 255px;
+			height: 0px;
+			width: 80px;
+			background: red;
+			background: url("mamama.png");
+			transition: 4s;
+		}
+		.fifita{
+			position: absolute;
+			top: 100px;
+			left: 850px;
+			height: 0px;
+			width: 400px;
+			background: red;
+			background: url(messis.png);
+			transition: 3s;
+		}
+		.titulo{
+			position: absolute;
+			text-align: center;
+			top: 50px;
+			left: 110px;
+			font-size: 30px;
+			font-family: Verdana;
+			color: #EEE8AA;
+		
+		}
+		.texto{
+			position: absolute;
+			text-align: justify;
+			top: 210px;
+			left: 80px;
+			font-size: 25px;
+			font-family: Verdana;
+			color: white;
+			transition: 5s;
+		}
+		.botne{
+			position: absolute;
+			top: 670px;
+			left: 500px;
+			width: 700px;
+			height: 70px;
+			background: url(nevera.png);
+			border-radius: 80px;
+			font-size: 60px;
+			font-family: arial;
+			text-align: center;
+			transition: 3s;
+		}
+		.lospss{
+			position: absolute;
+			top: 10px;
+			left: 500px;
+			width: 700px;
+			height: 70px;
+			background: url(titu.png);
+			border-radius: 80px;
+			font-size: 60px;
+			font-family: arial;
+			text-align: center;
+			transition: 3s;
+		}
+		.integra{
+			position: absolute;
+			top: 140px;
+			left: 500px;
+			width: 700px;
+			height: 70px;
+			background: url(integrantes.png);
+			border-radius: 80px;
+			font-size: 60px;
+			font-family: arial;
+			text-align: center;
+			transition: 1s;
+		}
+		.preg{
+			position: absolute;
+			top: 275px;
+			left: 500px;
+			width: 700px;
+			height: 70px;
+			background: url(pregunta.png);
+			border-radius: 80px;
+			font-size: 40px;
+			font-family: arial;
+			text-align: center;
+			transition: 1s;
+		}
+		.resul{
+			position: absolute;
+			top: 415px;
+			left: 500px;
+			width: 700px;
+			height: 70px;
+			background: url(resultados.png);
+			border-radius: 80px;
+			font-size: 60px;
+			font-family: arial;
+			text-align: center;
+			transition: 1s;
+		}
+		.objet{
+			position: absolute;
+			top: 545px;
+			left: 500px;
+			width: 700px;
+			height: 70px;
+			background: url(objetivos.png);
+			border-radius: 80px;
+			font-size: 60px;
+			font-family: arial;
+			text-align: center;
+			transition: 1s;
+		}
+		.cuad{
+			position: absolute;
+			top: 140px;
+			left: 500px;
+			width: 0px;
+			height: 600px;
+			background: green;
+			border-radius: 50px;
+			transition: 2s;
+		}
+	</style>
+</head>
+<body>
+
+<div class="cuerpo" onclick="mano()" id="manito"></div>
+	<div class="man2" id="man2" onclick="manito2()"></div>
+<div class="man3" id="man3" onclick="manito3()"></div>
+<div class="man4" id="man4" onclick="manito4()"></div>
+<div class="man5" id="man5" onclick="manito5()"></div>
+<div class="man6" id="man6" onclick="manito6()"></div>
+<div class="man7" id="man7" onclick="manito7()"></div>
+<div class="man8" id="man8" onclick="manito8()"></div>
+<div class="man9" id="man9" onclick="manito9()"></div>
+<div class="man10" id="man10" onclick="manito10()"></div>
+<div class="man11" id="man11" onclick="manito11()"></div>
+<div class="man12" id="man12" onclick="manito12()"></div>
+<div class="man13" id="man13" onclick="manito13()"></div>
+<div class="man14" id="man14" onclick="manito14()"></div>
+<div class="man15" id="man15" onclick="manito15()"></div>
+<div class="fifita" id="fifa" onclick="fifi()">
+	<div class="titulo" id="title"></div>
+	<div class="texto" id="tex">
+</div>
+</div>
+	<div class="man" id="man" onclick="manitop()"></div>
+		<div class="botne" id="botnei" onclick="botio()"></div>
+		<div class="lospss" id="lospi" ></div>
+		<div class="integra" id="integrai" onclick="integrao()"></div>
+		<div class="preg" id="pregi" onclick="prego()"></div>
+		<div class="resul" id="resuli" onclick="resulo()"></div>
+		<div class="objet" id="objeti" onclick="objeto()"></div>
+		<div class="cuad" id="cuadi" onclick="cuado()"></div>
+
+<script>
+	con=1
+	coño=1
+	cam=1
+	int=1
+	est=1
+	mam=1
+	obj=1
+	function objeto() {
+		if (obj==1) {
+			objeti.style.top=20+"px"
+			cuadi.style.width=1100+"px"
+			cuadi.style.left=300+"px"
+			
+			lospi.style.height=0+"px"
+			integrai.style.width=0+"px"
+				botnei.style.width=0+"px"
+				pregi.style.width=0+"px"
+				resuli.style.width=0+"px"
+				cuadi.style.background="url(cuadroobjetivos.png)"
+				
+				pregi.style.transition=1+"s"
+				botnei.style.transition=1+"s"
+				resuli.style.transition=1+"s"
+				objeti.style.transition=3+"s"
+				integrai.style.transition=1+"s"
+
+			obj=2
+		}
+		else{
+			if (obj==2) {
+				
+			lospi.style.height=70+"px"
+				objeti.style.top=545+"px"
+				cuadi.style.width=0+"px"
+				integrai.style.width=700+"px"
+				botnei.style.width=700+"px"
+				pregi.style.width=700+"px"
+				resuli.style.width=700+"px"
+				objeti.style.width=700+"px"
+				
+		
+				obj=1
+			}
+		}
+	}
+	function resulo() {
+		if (mam==1) {
+			resuli.style.top=20+"px"
+			cuadi.style.width=1100+"px"
+			cuadi.style.left=300+"px"
+			
+			lospi.style.height=0+"px"
+			integrai.style.width=0+"px"
+				botnei.style.width=0+"px"
+				pregi.style.width=0+"px"
+				objeti.style.width=0+"px"
+				cuadi.style.background="url(cuadroresultados.png)"
+				
+				pregi.style.transition=1+"s"
+				botnei.style.transition=1+"s"
+				resuli.style.transition=3+"s"
+				objeti.style.transition=1+"s"
+				integrai.style.transition=1+"s"
+
+			mam=2
+		}
+		else{
+			if (mam==2) {
+			
+			lospi.style.height=70+"px"
+				resuli.style.top=415+"px"
+				cuadi.style.width=0+"px"
+				integrai.style.width=700+"px"
+				botnei.style.width=700+"px"
+				pregi.style.width=700+"px"
+				resuli.style.width=700+"px"
+				objeti.style.width=700+"px"
+				
+				mam=1
+			}
+		}
+	}
+	function prego() {
+		if (est==1) {
+			pregi.style.top=20+"px"
+			cuadi.style.width=1100+"px"
+			cuadi.style.left=300+"px"
+		
+			lospi.style.height=0+"px"
+			integrai.style.width=0+"px"
+				botnei.style.width=0+"px"
+				resuli.style.width=0+"px"
+				objeti.style.width=0+"px"
+				
+				cuadi.style.background="url(cuadropregunta.png)"
+				pregi.style.transition=3+"s"
+				botnei.style.transition=1+"s"
+				resuli.style.transition=1+"s"
+				objeti.style.transition=1+"s"
+				integrai.style.transition=1+"s"
+
+			est=2
+		}
+		else{
+			if (est==2) {
+				
+			lospi.style.height=70+"px"
+				pregi.style.top=275+"px"
+				cuadi.style.width=0+"px"
+				integrai.style.width=700+"px"
+				botnei.style.width=700+"px"
+				pregi.style.width=700+"px"
+				resuli.style.width=700+"px"
+				objeti.style.width=700+"px"
+				
+		
+				est=1
+			}
+		}
+	}
+	function integrao() {
+		if (int==1) {
+			integrai.style.top=20+"px"
+			cuadi.style.width=700+"px"
+			cuadi.style.left=500+"px"
+			
+			lospi.style.height=0+"px"
+				pregi.style.width=0+"px"
+				botnei.style.width=0+"px"
+				resuli.style.width=0+"px"
+				objeti.style.width=0+"px"
+				cuadi.style.background="url(cuadrointegrantesf.png)"
+			
+				integrai.style.transition=1+"s"
+				botnei.style.transition=1+"s"
+				resuli.style.transition=1+"s"
+				objeti.style.transition=1+"s"
+				integrai.style.transition=3+"s"
+
+			int=2
+		}
+		else{
+			if (int==2) {
+			
+			lospi.style.height=70+"px"
+				integrai.style.top=140+"px"
+				cuadi.style.width=0+"px"
+				integrai.style.width=700+"px"
+				botnei.style.width=700+"px"
+				pregi.style.width=700+"px"
+				resuli.style.width=700+"px"
+				objeti.style.width=700+"px"
+				
+		
+				int=1
+			}
+		}
+	}
+	function botio() {
+		if (cam==1) {
+			
+			botnei.style.top=20+"px"
+			manito.style.height=630+"px"
+			
+			lospi.style.height=0+"px"
+				integrai.style.width=0+"px"
+				pregi.style.width=0+"px"
+				resuli.style.width=0+"px"
+				objeti.style.width=0+"px"
+				manito.style.left=450+"px"
+				manito.style.height=630+"px"
+					botnei.style.transition=3+"s"
+				
+				integrai.style.transition=1+"s"
+				pregi.style.transition=1+"s"
+				resuli.style.transition=1+"s"
+				objeti.style.transition=1+"s"
+
+			cam=2
+			con=1
+
+		}
+		else{
+			if (cam==2) {
+				
+			lospi.style.height=70+"px"
+				botnei.style.top=670+"px"
+				manito.style.background="url(papa1.png)"
+				manito.style.height=630+"px"
+				manito.style.width=750+"px"
+				integrai.style.width=700+"px"
+				pregi.style.width=700+"px"
+				resuli.style.width=700+"px"
+				objeti.style.width=700+"px"
+				
+				man.style.height=0+"px"
+				man2.style.height=0+"px"
+				man3.style.height=0+"px"
+				man4.style.height=0+"px"
+				man5.style.height=0+"px"
+				man6.style.height=0+"px"
+				man7.style.height=0+"px"
+				man8.style.height=0+"px"
+				man9.style.height=0+"px"
+				man10.style.height=0+"px"
+				man11.style.height=0+"px"
+				man12.style.height=0+"px"
+				man13.style.height=0+"px"
+				man14.style.height=0+"px"
+				man15.style.height=0+"px"
+				man.style.transition=1+"s"
+				man2.style.transition=1+"s"
+				man3.style.transition=1+"s"
+				man4.style.transition=1+"s"
+				man5.style.transition=1+"s"
+				man6.style.transition=1+"s"
+				man7.style.transition=1+"s"
+				man8.style.transition=1+"s"
+				man9.style.transition=1+"s"
+				man10.style.transition=1+"s"
+				man11.style.transition=1+"s"
+				man12.style.transition=1+"s"
+				man13.style.transition=1+"s"
+				man14.style.transition=1+"s"
+				man15.style.transition=1+"s"
+				fifa.style.height=0+"px"
+				
+				fifa.style.transition=1+"s"
+				tex.innerHTML=""
+			title.innerHTML=""
+
+			manito.style.height=0+"px"
+				cam=1
+			}
+		}
+	}
+	function mano() {
+		if (con==1) {
+			
+			manito.style.left=150+"px"
+			manito.style.height=630+"px"
+				manito.style.width=1200+"px"
+				manito.style.background="url(papa2.png)"
+				man.style.height=80+"px"
+				man2.style.height=80+"px"
+				man3.style.height=80+"px"
+				man4.style.height=80+"px"
+				man5.style.height=80+"px"
+				man6.style.height=80+"px"
+				man7.style.height=80+"px"
+				man8.style.height=80+"px"
+				man9.style.height=80+"px"
+				man10.style.height=80+"px"
+				man11.style.height=80+"px"
+				man12.style.height=80+"px"
+				man13.style.height=80+"px"
+				man14.style.height=80+"px"
+				man15.style.height=80+"px"
+				man.style.transition=4+"s"
+				man2.style.transition=4+"s"
+				man3.style.transition=4+"s"
+				man4.style.transition=4+"s"
+				man5.style.transition=4+"s"
+				man6.style.transition=4+"s"
+				man7.style.transition=4+"s"
+				man8.style.transition=4+"s"
+				man9.style.transition=4+"s"
+				man10.style.transition=4+"s"
+				man11.style.transition=4+"s"
+				man12.style.transition=4+"s"
+				man13.style.transition=4+"s"
+				man14.style.transition=4+"s"
+				man15.style.transition=4+"s"
+
+			con=2
+
+		}
+		else{
+			if (con==2) {
+				
+				manito.style.height=630+"px"
+				manito.style.width=750+"px"
+				manito.style.left=450+"px"
+				manito.style.background="url(papa1.png)"
+				man.style.height=0+"px"
+				man2.style.height=0+"px"
+				man3.style.height=0+"px"
+				man4.style.height=0+"px"
+				man5.style.height=0+"px"
+				man6.style.height=0+"px"
+				man7.style.height=0+"px"
+				man8.style.height=0+"px"
+				man9.style.height=0+"px"
+				man10.style.height=0+"px"
+				man11.style.height=0+"px"
+				man12.style.height=0+"px"
+				man13.style.height=0+"px"
+				man14.style.height=0+"px"
+				man15.style.height=0+"px"
+				man.style.transition=1+"s"
+				man2.style.transition=1+"s"
+				man3.style.transition=1+"s"
+				man4.style.transition=1+"s"
+				man5.style.transition=1+"s"
+				man6.style.transition=1+"s"
+				man7.style.transition=1+"s"
+				man8.style.transition=1+"s"
+				man9.style.transition=1+"s"
+				man10.style.transition=1+"s"
+				man11.style.transition=1+"s"
+				man12.style.transition=1+"s"
+				man13.style.transition=1+"s"
+				man14.style.transition=1+"s"
+				man15.style.transition=1+"s"
+				fifa.style.height=0+"px"
+				coño=1
+				fifa.style.transition=1+"s"
+				tex.innerHTML=""
+			title.innerHTML=""
+				con=1
+			}
+		}
+	}
+
+	function manitop() {
+		if (coño==1) {
+		fifa.style.height=500+"px"
+		title.innerHTML="<h1><center>MAIZ</center></h1>"
+		title.style.left=110+"px"
+		title.style.fontSize=30+"px"
+		tex.innerHTML="Reino:	 Plantae<br>Clase:	 Angiosperma<br>Orden: Poales<br>Familia: Poaceae<br>Género: Zea<br>Especie: Zea mays<br>"
+		coño=2
+	}
+	else{
+		if (coño==2) {
+			fifa.style.height=0+"px"
+			title.innerHTML=""
+			tex.innerHTML=""
+			coño=1
+		}
+	}
+	}
+	function manito2() {
+		if (coño==1) {
+		fifa.style.height=500+"px"
+		title.style.left=90+"px"
+		title.innerHTML="<h1><center>MELON</center></h1>"
+		title.style.fontSize=30+"px"
+		tex.innerHTML="Reino: Plantae<br>Clase:	 Magnoliopsida<br>Orden: Cucurbitales<br>Familia:Cucurbitaceae<br>Género: Sicana<br>Especie:Sicana"
+		coño=2
+	}
+	else{
+		if (coño==2) {
+			fifa.style.height=0+"px"
+			tex.innerHTML=""
+			title.innerHTML=""
+			coño=1
+		}
+	}
+	}
+	function manito3() {
+		if (coño==1) {
+		fifa.style.height=500+"px"
+		coño=2
+		title.innerHTML="<h1><center>YUCA</center></h1>"
+		title.style.left=110+"px"
+		title.style.fontSize=30+"px"
+		tex.innerHTML="Reino: Plantae<br>Clase:	 Magnoliopsida<br>Orden: Malpighiales<br>Familia:Euphorbiace<br>Género: Manihot<br>Especie:Esculenta"
+	}
+	else{
+		if (coño==2) {
+			fifa.style.height=0+"px"
+			tex.innerHTML=""
+			title.innerHTML=""
+			coño=1
+		}
+	}
+	}
+	function manito4() {
+		if (coño==1) {
+		fifa.style.height=500+"px"
+		coño=2
+		title.style.fontSize=20+"px"
+		title.innerHTML="<h1><center>HIERBABUENA</center></h1>"
+		title.style.left=40+"px"
+		tex.innerHTML="Reino: Plantae<br>Clase:	 Magnoliopsida<br>Orden: Lamiales<br>Familia: Lamiaceae<br>Género: Mentha<br>Especie: Spicata"
+	}
+	else{
+		if (coño==2) {
+			fifa.style.height=0+"px"
+			title.style.fontSize=30+"px"
+			tex.innerHTML=""
+			title.innerHTML=""
+			coño=1
+		}
+	}
+	}
+	function manito5() {
+		if (coño==1) {
+		fifa.style.height=500+"px"
+		coño=2
+		title.style.fontSize=30+"px"
+		title.innerHTML="<h1><center>LIPPIA</center></h1>"
+		title.style.left=90+"px"
+		tex.innerHTML="Reino:  Plantae<br>Clase:Magnoliopsida<br>Orden: Lamiales<br>Familia: Verbenaceae<br>Género: Lippia"
+	}
+	else{
+		if (coño==2) {
+			fifa.style.height=0+"px"
+			tex.innerHTML=""
+			title.innerHTML=""
+			coño=1
+		}
+	}
+	}
+	function manito6() {
+		if (coño==1) {
+		fifa.style.height=500+"px"
+		coño=2
+		title.style.fontSize=22+"px"
+		title.innerHTML="<h1><center>MALVAVISCO</center></h1>"
+		title.style.left=40+"px"
+		tex.innerHTML="Reino: Plantae<br>Clase: Magnoliopsida<br>Orden: Malvales<br>Familia: Malvaceae<br>Género: Althaea<br>Especie:A.officinalis"
+	}
+	else{
+		if (coño==2) {
+			fifa.style.height=0+"px"
+			tex.innerHTML=""
+			title.innerHTML=""
+			coño=1
+		}
+	}
+	}
+	function manito7() {
+		if (coño==1) {
+		fifa.style.height=500+"px"
+		coño=2
+		title.style.fontSize=19+"px"
+		title.innerHTML="<h1><center>SUCULENTAS OREJAS<BR>DE CONEJO	</center></h1>"
+		title.style.left=30+"px"
+		tex.innerHTML="Reino:	 Plantaez<br>Clase:	 Magnoliopsida<br>Orden: Caryophyllales<br>Familia: Cactaceae<br>Género: Opuntia<br>Especie: Microdasys"
+	}
+	else{
+		if (coño==2) {
+			fifa.style.height=0+"px"
+			tex.innerHTML=""
+			title.innerHTML=""
+			coño=1
+		}
+	}
+	}
+	function manito8() {
+		if (coño==1) {
+		fifa.style.height=500+"px"
+		coño=2
+		title.style.fontSize=23+"px"
+		title.innerHTML="<h1><center>DOLAR SUCULENTA</center></h1>"
+		title.style.left=20+"px"
+		tex.innerHTML="Reino:	 Plantae<br>Orden: Lamiales<br>Familia: Lamiaceae<br>Género: Plectranthus<br>Especie: Verticillatus "
+	}
+	else{
+		if (coño==2) {
+			fifa.style.height=0+"px"
+			tex.innerHTML=""
+			title.innerHTML=""
+			coño=1
+		}
+	}
+	}
+	function manito9() {
+		if (coño==1) {
+		fifa.style.height=500+"px"
+		coño=2
+		title.style.fontSize=30+"px"
+		title.innerHTML="<h1><center>ARBEJA</center></h1>"
+		title.style.left=70+"px"
+		tex.innerHTML="Reino:	 Plantae<br>Clase:Magnoliopsida<br>Orden: Fabales<br>Familia: Fabaceae<br>Género: Pisum<br>Especie: Sativum "
+	}
+	else{
+		if (coño==2) {
+			fifa.style.height=0+"px"
+			tex.innerHTML=""
+			title.innerHTML=""
+			coño=1
+		}
+	}
+	}
+	function manito10() {
+		if (coño==1) {
+		fifa.style.height=500+"px"
+		coño=2
+		title.style.fontSize=28+"px"
+		title.innerHTML="<h1><center>MAIZ BLANCO</center></h1>"
+		title.style.left=18+"px"
+		tex.innerHTML="Reino:	 Plantae<br>Clase:	 Angiosperma<br>Orden: Poales<br>Familia: Poaceae<br>Género: Zea<br>Especie: Zea mays"
+	}
+	else{
+		if (coño==2) {
+			fifa.style.height=0+"px"
+			tex.innerHTML=""
+			title.innerHTML=""
+			coño=1
+		}
+	}
+	}
+	function manito11() {
+		if (coño==1) {
+		fifa.style.height=500+"px"
+		coño=2
+		title.style.fontSize=22+"px"
+		title.innerHTML="<h1><center>GUANABANA</center></h1>"
+		title.style.left=35+"px"
+		tex.innerHTML="Reino:	 Plantae<br>Clase:	 Magnoliopsida<br>Orden: Magnoliales<br>Familia: Annonaceae<br>Género: Annona<br>Especie: A. muricata"
+	}
+	else{
+		if (coño==2) {
+			fifa.style.height=0+"px"
+			tex.innerHTML=""
+			title.innerHTML=""
+			coño=1
+		}
+	}
+	}
+	function manito12() {
+		if (coño==1) {
+		fifa.style.height=500+"px"
+		coño=2
+		title.style.fontSize=22+"px"
+		title.innerHTML="<h1><center>ALGARROBO</center></h1>"
+		title.style.left=40+"px"
+		tex.innerHTML="Reino: Plantae<br>Clase: Magnoliopsida<br>Orden: Fabales<br>Familia: Fabaceae<br>Género: Ceratonia<br>Especie: Siliqua"
+	}
+	else{
+		if (coño==2) {
+			fifa.style.height=0+"px"
+			tex.innerHTML=""
+			title.innerHTML=""
+			coño=1
+		}
+	}
+	}
+	function manito13() {
+		if (coño==1) {
+		fifa.style.height=500+"px"
+		coño=2
+		title.style.fontSize=22+"px"
+		title.innerHTML="<h1><center>UVA RIOJA</center></h1>"
+		title.style.left=55+"px"
+		tex.innerHTML="Reino: Plantae<br>Clase:	 Magnoliopsida<br>Orden: Vitales<br>Familia: Vitaceae<br>Género: Vitis<br>Especie: Vinífera"
+	}
+	else{
+		if (coño==2) {
+			fifa.style.height=0+"px"
+			tex.innerHTML=""
+			title.innerHTML=""
+			coño=1
+		}
+	}
+	}
+	function manito14() {
+		if (coño==1) {
+		fifa.style.height=500+"px"
+		coño=2
+		title.style.fontSize=20+"px"
+		title.innerHTML="<h1><center>PAPA AEREA</center></h1>"
+		title.style.left=55+"px"
+		tex.innerHTML="Reino:	 Plantae<br>Clase:	 Magnoliopsida<br>Orden: Solanales<br>Familia: Solanaceae<br>Género: Solanum<br>Especie: Tuberosum"
+	}
+	else{
+		if (coño==2) {
+			fifa.style.height=0+"px"
+			tex.innerHTML=""
+			title.innerHTML=""
+			coño=1
+		}
+	}
+	}
+	function manito15() {
+		if (coño==1) {
+		fifa.style.height=500+"px"
+		coño=2
+		title.style.fontSize=18+"px"
+		title.innerHTML="<h1><center>FRIJOL BLANCO</center></h1>"
+		title.style.left=42+"px"
+		tex.innerHTML="Reino: Plantae<br>Clase: Magnoliopsida<br>Orden: Fabales<br>Familia: Fabaceae<br>Género: Phaseolus<br>Especie: Vulgaris"
+	}
+	else{
+		if (coño==2) {
+			fifa.style.height=0+"px"
+			tex.innerHTML=""
+			title.innerHTML=""
+			coño=1
+		}
+	}
+	}
+	function fifi() {
+		fifa.style.height=0+"px"
+			coño=1
+				title.innerHTML=""
+			tex.innerHTML=""
+
+	}
+</script>
+</body>
+</html>
